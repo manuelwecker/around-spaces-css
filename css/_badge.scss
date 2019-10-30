@@ -1,8 +1,11 @@
 .badge {
   display: inline-block;
-  width: 200px;
   color: $third-color;
   padding: 3px 9px;
   background-color: $primary-color;
   border-radius: 5px;
+  font-size: 0.9em;
+  &--hashtag {
+    background-color: $secondary-color;
+  }
 }

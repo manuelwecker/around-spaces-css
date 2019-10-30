@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 body {
-  @include FlexCenter(column);
+  // @include FlexCenter(column);
+  // flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
   margin: 20;
   padding: 0;
   height: 100vh;
@@ -12,6 +16,11 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: $font-stack;
-  flex-wrap: wrap;
+
   background-color: $secondary-color;
+}
+.headline {
+  padding: none;
+  margin: none;
+  display: block;
 }
