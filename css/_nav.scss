@@ -1,44 +1,45 @@
-nav {
-  button {
-    display: inline-block;
-    width: auto;
-    color: $primary-color;
-    padding: 12px;
-    background-color: $third-color;
-    border-radius: 5px;
-  }
-}
-
 .nav {
   @include FlexCenter(row);
-  li {
-    list-style-type: none;
-  }
-  li::after {
-    content: ">";
-    color: $third-color;
-  }
+  width: 100%;
+  justify-content: space-around;
+
+  // li {
+  //   list-style-type: none;
+  // }
+  // li::after {
+  //   content: ">";
+  //   color: $third-color;
+  // }
 }
 
 .nav__button {
+  display: inline-block;
+  width: auto;
+  color: $primary-color;
+  padding: 12px;
+  background-color: $third-color;
+  border-radius: 10px;
+  border: none;
+  outline: none;
   &__icon {
     width: 50px;
     height: 50px;
   }
   &--active {
+    fill: $third-color;
+    background-color: $primary-color;
+    border: none;
+  }
+  &:hover {
+    fill: $third-color;
+    background-color: $primary-color;
+  }
+  &:active {
+    fill: $third-color;
+    background-color: $primary-color;
   }
 }
 
-.nav-button a:hover {
-  fill: $secondary-color;
-}
-
-.nav-button--active {
-  fill: $third-color;
-  background-color: $primary-color;
-  border: 1px solid $primary-color;
-}
-
-.btn {
-  color: aqua;
-}
+// .nav__button a:hover {
+//   fill: primary-color;
+// }

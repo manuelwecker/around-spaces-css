@@ -1,3 +1,24 @@
 .box-container {
   @include FlexCenter(column);
 }
+.boxcard {
+  border: 1 solid $third-color;
+  background-color: $third-color;
+  border-radius: 10px;
+  @include FlexCenter(row);
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 20px;
+  width: 340px;
+}
+.boxcard__left {
+  padding: 20px;
+}
+.boxcard__right {
+  padding: 20px;
+}
+.boxcard__right__title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: $third-color;
+}
